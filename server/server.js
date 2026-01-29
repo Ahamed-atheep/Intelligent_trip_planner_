@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://your-app.vercel.app']
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175', 'https://intelligent-trip-planner.vercel.app', 'https://intelligent-trip-planner-git-main-ahamed-atheep-ks-projects.vercel.app', 'https://intelligent-trip-planner-ginbk8gl6-ahamed-atheep-ks-projects.vercel.app']
 }));
 app.use(express.json());
 
