@@ -2,7 +2,7 @@ const callFlowise = async (tripInput) => {
   try {
     console.log('Calling Flowise with:', tripInput);
     const response = await fetch(
-      "http://localhost:3000/api/v1/prediction/c05c334d-748b-44db-bf94-952359f05f7c",
+      "https://cloud.flowiseai.com/api/v1/prediction/1aa9e155-879f-4e50-9d41-061d16f7f7c0",
       {
         method: "POST",
         headers: {

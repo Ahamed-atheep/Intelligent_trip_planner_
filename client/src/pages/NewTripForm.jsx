@@ -22,7 +22,7 @@ function NewTripForm() {
     
     try {
       console.log('Sending request to server...')
-      const response = await axios.post('http://localhost:5004/api/plan-trip', formData)
+      const response = await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5004'}/api/plan-trip`, formData)
       console.log('Server response:', response.data)
       navigate(`/trip/${response.data._id}`)
     } catch (error) {

@@ -10,7 +10,7 @@ function TripDetail() {
   useEffect(() => {
     const fetchTrip = async () => {
       try {
-        const response = await axios.get(`http://localhost:5004/api/trips/${id}`)
+        const response = await axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5004'}/api/trips/${id}`)
         console.log('Full trip data:', response.data)
         console.log('Transport data:', response.data.transport)
         setTrip(response.data)
